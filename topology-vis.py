@@ -75,14 +75,14 @@ for id in topo_id:
 
   spout=nodelist[0]
 
-##Create graph
+  ##Create graph
   nx.draw(G, pos=pos)
-##Add node labels
+  ##Add node labels
   nx.draw_networkx_labels(G, pos,labels, font_size=15)
-##Add edge labels
+  ##Add edge labels
   nx.draw_networkx_edge_labels(G, pos=pos, edge_labels=edge_labels)
-##Change edge color
+  ##Change edge color
   nx.draw_networkx_edges(G,pos=pos, edge_color='b')
 
-##show graph
+  ##show graph
   plt.show()
